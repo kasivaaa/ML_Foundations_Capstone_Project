@@ -9,7 +9,7 @@ This project aims to use machine learning techniques to analyze student-related 
 The project will develop and compare machine learning models to predict students’ final academic scores and, where appropriate, classify students into different performance categories. The models will be evaluated using appropriate performance metrics, followed by error analysis to understand where and why the models make incorrect predictions.
 
 The ultimate goal is to determine whether machine learning can provide useful insights into student performance and help identify factors that may be associated with academic success or difficulty. These findings could support educators in making more informed decisions about academic intervention and student support.
-1. Research Questions
+## 1. Research Questions
 Main Research Question
 
 How effectively can machine learning models predict students’ academic performance using their academic, demographic, and behavioral characteristics?
@@ -24,7 +24,7 @@ Can the model help identify students who may be at risk of poor academic perform
 
 These questions are good because they don't just ask "which model has the highest score?" They also give you something meaningful to investigate during EDA, modelling, and error analysis.
 
-2. Project Objectives
+## 2. Project Objectives
 General Objective
 
 To develop and evaluate machine learning models for predicting student academic performance using relevant academic, demographic, and behavioral characteristics.
@@ -55,7 +55,42 @@ Finally, the project will interpret the model results and identify the factors t
 The project therefore combines data analysis and machine learning to move beyond simply describing student performance and instead explore whether student outcomes can be predicted and what factors may contribute to those predictions.
 
 
-Data Structure
+## Data Structure
 
-The dataset contains information about students' demographic characteristics, family background, school-related information, social factors, and academic performance.
+The dataset contains information about students' demographic characteristics, family background, academic history, school-related activities, and final academic performance.
 
+| Variable | Description | Data Type | Role |
+|---|---|---|---|
+| `school` | Student's school | Categorical | Feature |
+| `sex` | Student's gender | Categorical | Feature |
+| `age` | Student's age | Numerical | Feature |
+| `address` | Type of residential area | Categorical | Feature |
+| `famsize` | Family size | Categorical | Feature |
+| `Pstatus` | Parents' cohabitation status | Categorical | Feature |
+| `Medu` | Mother's education level | Ordinal | Feature |
+| `Fedu` | Father's education level | Ordinal | Feature |
+| `Mjob` | Mother's occupation | Categorical | Feature |
+| `Fjob` | Father's occupation | Categorical | Feature |
+| `reason` | Reason for choosing the school | Categorical | Feature |
+| `guardian` | Student's guardian | Categorical | Feature |
+| `traveltime` | Travel time to school | Ordinal | Feature |
+| `studytime` | Weekly study time | Ordinal | Feature |
+| `failures` | Number of previous class failures | Numerical | Feature |
+| `schoolsup` | Extra educational support | Categorical | Feature |
+| `famsup` | Family educational support | Categorical | Feature |
+| `paid` | Extra paid classes | Categorical | Feature |
+| `activities` | Participation in extracurricular activities | Categorical | Feature |
+| `nursery` | Attended nursery school | Categorical | Feature |
+| `higher` | Desire to pursue higher education | Categorical | Feature |
+| `internet` | Internet access at home | Categorical | Feature |
+| `romantic` | In a romantic relationship | Categorical | Feature |
+| `famrel` | Quality of family relationships | Ordinal | Feature |
+| `freetime` | Amount of free time | Ordinal | Feature |
+| `goout` | Frequency of going out with friends | Ordinal | Feature |
+| `Dalc` | Workday alcohol consumption | Ordinal | Feature |
+| `Walc` | Weekend alcohol consumption | Ordinal | Feature |
+| `health` | Current health status | Ordinal | Feature |
+| `absences` | Number of school absences | Numerical | Feature |
+| `G1` | First-period grade | Numerical | Feature* |
+| `G2` | Second-period grade | Numerical | Feature* |
+| `G3` | Final grade | Numerical | Target |
