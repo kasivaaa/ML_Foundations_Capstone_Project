@@ -94,3 +94,78 @@ The dataset contains information about students' demographic characteristics, fa
 | `G1` | First-period grade | Numerical | Feature* |
 | `G2` | Second-period grade | Numerical | Feature* |
 | `G3` | Final grade | Numerical | Target |
+## Project Workflow
+
+The project will follow a structured machine learning workflow:
+
+1. **Problem Definition**
+   - Define the problem and its real-world relevance.
+   - Establish the main research question and objectives.
+   - Define `G3` (final grade) as the target variable.
+
+2. **Data Understanding**
+   - Load the dataset.
+   - Examine the dataset structure and dimensions.
+   - Identify numerical, categorical, and ordinal variables.
+   - Review the meaning of each feature.
+
+3. **Data Cleaning**
+   - Check for missing values.
+   - Identify and remove duplicate records where appropriate.
+   - Check for inconsistent or invalid values.
+   - Verify the data types of variables.
+
+4. **Exploratory Data Analysis (EDA)**
+   - Analyze the distribution of the target variable.
+   - Explore relationships between features and final grades.
+   - Identify important patterns and trends.
+   - Use appropriate visualizations to support the analysis.
+
+5. **Outlier Analysis**
+   - Identify potential outliers in numerical variables.
+   - Investigate whether detected outliers are valid observations or data errors.
+   - Apply appropriate treatment where necessary.
+
+6. **Feature Selection**
+   - Identify features relevant to predicting final academic performance.
+   - Remove features that are inappropriate or may cause data leakage.
+   - Exclude `G1` and `G2` from the main early-prediction model.
+
+7. **Train-Test Split**
+   - Separate the features (`X`) from the target (`y`).
+   - Split the data into training and testing sets.
+   - Ensure that preprocessing is performed without leaking information from the test set.
+
+8. **Data Preprocessing**
+   - Encode categorical variables.
+   - Scale numerical variables where required.
+   - Combine transformations using a preprocessing pipeline.
+
+9. **Model Development**
+   - Establish a baseline model.
+   - Train multiple regression models.
+   - Compare models using the same training and testing procedure.
+
+10. **Model Evaluation**
+    - Evaluate model performance using appropriate regression metrics.
+    - Compare predicted values with actual `G3` values.
+    - Determine which model performs best.
+
+11. **Error Analysis**
+    - Analyze prediction errors.
+    - Examine residuals and identify patterns.
+    - Investigate cases where the model performs particularly well or poorly.
+    - Use residual plots to determine whether systematic patterns exist.
+
+12. **Model Interpretation**
+    - Identify the features that contribute most to predictions.
+    - Interpret the model results in the context of student academic performance.
+
+13. **Recommendations**
+    - Translate the findings into meaningful recommendations.
+    - Highlight factors that educators could consider when identifying students who may need additional support.
+
+14. **Conclusion**
+    - Summarize the major findings.
+    - Answer the research questions.
+    - Discuss the effectiveness and limitations of the model.
