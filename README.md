@@ -58,6 +58,11 @@ The project therefore combines data analysis and machine learning to move beyond
 ## Data Structure
 
 The dataset contains information about students' demographic characteristics, family background, academic history, school-related activities, and final academic performance.
+**Source:** this is the UCI Machine Learning Repository "Student Performance" dataset (Cortez & Silva, 2008), specifically the Mathematics course subset (`student-mat.csv`), collected via school reports and student questionnaires from two Portuguese secondary schools.
+
+**Size:** 395 rows (students) and 33 columns.
+
+**Target variable:** `G3` — final grade, an integer from 0 to 20.
 
 | Variable | Description | Data Type | Role |
 |---|---|---|---|
